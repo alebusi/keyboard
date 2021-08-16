@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ <div class="tastiera">
+   <div class="tasto" onclick="scriviTxt(this,'q')">Q</div>
+   <div class="tasto" onclick="scriviTxt(this,'w')">W</div>
+   <div class="tasto" onclick="scriviTxt(this,'e')">E</div>
+   <div class="tasto" onclick="scriviTxt(this,'r')">R</div>
+   <div class="tasto" onclick="scriviTxt(this,'t')">T</div>
+   <div class="tasto" onclick="scriviTxt(this,'y')">Y</div>
+   <div class="tasto" onclick="scriviTxt(this,'u')">U</div>
+   <div class="tasto" onclick="scriviTxt(this,'i')">I</div>
+   <div class="tasto" onclick="scriviTxt(this,'o')">O</div>
+   <div class="tasto" onclick="scriviTxt(this,'p')">P</div><br>
+   <div class="tasto" onclick="scriviTxt(this,'a')">A</div>
+   <div class="tasto" onclick="scriviTxt(this,'s')">S</div>
+   <div class="tasto" onclick="scriviTxt(this,'d')">D</div>
+   <div class="tasto" onclick="scriviTxt(this,'f')">F</div>
+   <div class="tasto" onclick="scriviTxt(this,'g')">G</div>
+   <div class="tasto" onclick="scriviTxt(this,'h')">H</div>
+   <div class="tasto" onclick="scriviTxt(this,'j')">J</div>
+   <div class="tasto" onclick="scriviTxt(this,'k')">K</div>
+   <div class="tasto" onclick="scriviTxt(this,'l')">L</div>
+   <div class="tasto" onclick="scriviTxt(this,'è')">è</div><br>
+   <div class="tasto" onclick="scriviTxt(this,'z')">Z</div>
+   <div class="tasto" onclick="scriviTxt(this,'x')">X</div>
+   <div class="tasto" onclick="scriviTxt(this,'c')">C</div>
+   <div class="tasto" onclick="scriviTxt(this,'v')">V</div>
+   <div class="tasto" onclick="scriviTxt(this,'b')">B</div>
+   <div class="tasto" onclick="scriviTxt(this,'n')">N</div>
+   <div class="tasto" onclick="scriviTxt(this,'m')">M</div>
+   <div class="tasto" onclick="scriviTxt(this,',')">,</div>
+   <div class="tasto" onclick="scriviTxt(this,'.')">.</div>
+   <div class="tasto" onclick="scriviTxt(this,'!')">!</div><br>
+   <div class="tasto" style="width:36vw" onclick="scriviTxt(this,' ')">_____</div>
+ </div>
+  <a href="https://docs.google.com/document/d/12QVBoBTFp7NUyzm3mmXX1KyOid-myt4_K6WE8-mMniI/edit?usp=sharing" target="_blank"> <div class="bottone"></div>
+  </a>
+ <div id="underscore">
+   <div onclick="muoviCursore(-1)"><svg viewBox="-10 -10 120 120"> <path d="M 0 0 M75 25 l-50 25 l50 25" /></svg></div>
+   <div onclick="muoviCursore(1)"><svg viewBox="-10 -10 120 120"> <path d="M 0 0 M25 25 l50 25 l-50 25" /></svg></div>
+   <div onclick="muoviCursore(-10)"><svg viewBox="-10 -10 120 120"> <path d="M 0 0 M75 25 l-50 25 l50 25 M25 25 v50" /></svg></div>
+   <div onclick="muoviCursore(99)"><svg viewBox="-10 -10 120 120"> <path d="M 0 0 M25 25 l50 25 l-50 25 M75 25 v50" /></svg></div>
+   <div onclick="scriviTxt(this,'x')"><svg viewBox="-10 -10 120 120"> <path d="M 0 0 M80 20 v60 h-50 l-20 -30 l20 -30 z"/> <path d="M 0 0M65 35 l-30 30 m0 -30 l30 30" /></svg></div>
+ </div>
+ <textarea name="testo" id="testo"></textarea>
+ <div id="anteprima" onclick="myFunc()"></div>
+ <script src="script.js"></script>
+</body>
+</html>
