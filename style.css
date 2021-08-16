@@ -1,0 +1,136 @@
+html, body {
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+.tastiera {
+    width: 93vw;
+    top: 100px;
+    left: 50%;
+    position: absolute;
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+}
+
+
+.tasto, .tasto2 {
+    display: inline-block;
+    width: 9vw;
+    height: 130px;
+    text-align: center;
+    font-size: 70px;
+    animation: mymoveSelection 2s;
+}
+
+.tasto2 {
+    animation: mymoveSelection2 2s;
+}
+
+@keyframes mymoveSelection {
+  0%   {background-color: orange;}
+  100% {background-color: black;}
+}
+
+@keyframes mymoveSelection2 {
+  0%   {background-color: orange;}
+  100% {background-color: black;}
+}
+
+#testo {
+  width: 72vw;
+  height: 800px;
+  top: 1160px;
+  left: 10vw;
+  position: absolute;
+  margin-bottom: 10vh;
+  font-size: 70px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: black;
+}
+
+#underscore {
+  width: 9vw;
+  top: 1160px;
+  left: 86vw;
+  position: absolute;
+  margin-bottom: 10vh;
+  font-size: 70px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: black;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+#underscore .tasto {
+  width: 8vw;
+}
+
+#underscore svg {
+  width: 9vw;
+  height: 9vw;
+}
+
+#underscore svg:hover {
+  animation: mymoveSelection 2s;
+}
+
+#underscore path {
+    fill: black;
+    stroke: white;
+    stroke-width: 2;
+}
+
+.bottone {
+  width: 80px;
+  height: 80px;
+  top: 900px;
+  left: 10vw;
+  position: absolute;
+  background-color: orange;
+}
+
+#griglia {
+  opacity: 0.5;
+}
+
+svg {
+    display: inline-block;
+    background-color: black;
+    margin: 20 px;
+    width: 400px;
+    height: 400px;
+}
+
+svg:hover #griglia {
+  opacity: 0;
+}
+
+path {
+    fill: red;
+    stroke: white;
+    stroke-width: 1;
+}
+
+#anteprima {
+    height: 500px;
+    top: 2100px;
+    left: 10vw;
+    position: absolute;
+}
+
+#paginagiu {
+    background-color: yellow;
+    position: fixed;
+    top: 80vh;
+    left: 80vw;
+    width: 50px;
+    height: 50px;
+}
