@@ -2,7 +2,7 @@ html, body {
     background-color: black;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    /*overflow: hidden;*/
+    margin: 0;
 }
 
 .tastiera {
