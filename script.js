@@ -9,7 +9,7 @@ function scriviTxt(elem,car) {
     elem.className="tasto";
   }
   testo=document.getElementById("testo").innerHTML;
-  if (car == "x") {
+  if (car == "X") {
     pos-=1;
     testo=testo.substring(0,pos) + testo.substring(pos+1);
   } else {
@@ -25,8 +25,12 @@ function muoviCursore(direzione) {
   testo=testo.replace(cursore, "");
   //alert("pos"+pos+"lt "+testo.length);
   if (direzione == 99) {
+    pos=testo.length;
     testo=testo+cursore;
-    pos=testo.length-1;
+    document.getElementById("testo").innerHTML = testo;
+  } else if (direzione == -10 & pos < 10) {
+    pos=0;
+    testo=cursore+testo;
     document.getElementById("testo").innerHTML = testo;
   } else if (pos+direzione >-1 && pos+direzione <= testo.length) {
     pos=pos+direzione;
@@ -35,16 +39,7 @@ function muoviCursore(direzione) {
     testo=testo.substring(0,pos)+ cursore + testo.substring(pos);
     //alert("testo : "+testo);
     document.getElementById("testo").innerHTML = testo;
-    //mySelect(pos);
   }
-}
-
-function mySelect(position) {
-  a=1;
-}
-
-function myFunc() {
-  a=0;
 }
 
 function attivaScroll() {
