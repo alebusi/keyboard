@@ -1,6 +1,6 @@
 var testo="";
 var pos=0;
-var cursore="_";
+var cursore='<div class="cursore"></div>';
 
 function scriviTxt(elem,car) {
   if (elem.className == "tasto") {
@@ -31,7 +31,9 @@ function muoviCursore(direzione) {
   } else if (pos+direzione >-1 && pos+direzione <= testo.length) {
     pos=pos+direzione;
     //alert("pos"+pos);
+    //alert("cursore : "+cursore);
     testo=testo.substring(0,pos)+ cursore + testo.substring(pos);
+    //alert("testo : "+testo);
     document.getElementById("testo").innerHTML = testo;
     //mySelect(pos);
   }
